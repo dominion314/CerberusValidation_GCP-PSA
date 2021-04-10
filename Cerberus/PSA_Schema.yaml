@@ -1,0 +1,21 @@
+---
+PrivateServiceAccounts:
+  type: 'dict'
+  keysrules:
+    type: 'string'
+    regex: '^[0-9a-z-]+'
+  valuesrules:
+    type: 'dict'
+    schema:
+      displayName:
+        type: 'string'
+        required: true
+      description:
+        type: 'string'
+        required: false
+      labels:
+        type: 'dict'
+        required: false
+        keysrules:
+          type: 'string'
+          regex: '^[0-9a-z-]+'

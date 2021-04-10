@@ -1,0 +1,12 @@
+```yml
+---
+  vpcs:
+    {{ vpc_name }}:
+
+      routingMode: GLOBAL
+      autoCreateSubnets: false
+      psaNetwork:
+        {{ vpc_name }}-{{ service }}-01:
+          network: 10.124.xx.xx/xx
+
+```
